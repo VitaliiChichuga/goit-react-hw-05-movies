@@ -11,7 +11,10 @@ function HomePage() {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
-    fetchMovies.fetchPopularMovies().then(results => setMovies(results));
+    fetchMovies
+      .fetchPopularMovies()
+      .then(results => setMovies(results))
+      .catch(error => error);
   }, []);
   return (
     <>

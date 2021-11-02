@@ -8,12 +8,12 @@ import {
 } from 'react-router-dom';
 import { useState, useEffect, Suspense, lazy } from 'react';
 import PropTypes from 'prop-types';
-import fetchMovies from '../../Services/ApiService';
+import fetchMovies from '../../components/Services/ApiService';
 import style from '../views/MovieDetailsPage.module.css';
 import defaultImage from '../image/image.png';
 
-const Cast = lazy(() => import('../views/Cast'));
-const Reviews = lazy(() => import('../views/Reviews'));
+const Cast = lazy(() => import('../../components/Cast/Cast'));
+const Reviews = lazy(() => import('../../components/Reviews/Reviews'));
 
 function MovieDetailsPage() {
   const { url } = useRouteMatch();
@@ -23,7 +23,10 @@ function MovieDetailsPage() {
   const [movie, setMovie] = useState(null);
 
   useEffect(() => {
-    fetchMovies.fetchMoviesById(movieId).then(results => setMovie(results));
+    fetchMovies
+      .fetchMoviesById(movieId)
+      .then(results => setMovie(results))
+      .catch(error => error);
   }, [movieId]);
 
   const onBack = () => {

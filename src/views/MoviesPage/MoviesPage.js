@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { NavLink, useLocation, useHistory } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import fetchMovies from '../../Services/ApiService';
+import fetchMovies from '../../components/Services/ApiService';
 import styles from '../views/MoviesPage.module.css';
 import defaultImage from '../image/image.png';
 

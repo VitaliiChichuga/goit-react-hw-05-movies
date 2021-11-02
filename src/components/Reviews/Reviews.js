@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
-import fetchMovies from '../../Services/ApiService';
+import fetchMovies from '../Services/ApiService';
 
 function Reviews({ movieId }) {
   const [reviews, setReviews] = useState([]);
