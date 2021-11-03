@@ -3,9 +3,9 @@ import { Switch, Route } from 'react-router-dom';
 import style from '../App/App.module.css';
 
 const Navigation = lazy(() => import('../Navigation/Navigation'));
-const HomePage = lazy(() => import('../views/HomePage'));
-const MoviesPage = lazy(() => import('../views/MoviesPage'));
-const MovieDetailsPage = lazy(() => import('../views/MovieDetailsPage'));
+const HomePage = lazy(() => import('../../views/HomePage/HomePage'));
+const MoviesPage = lazy(() => import('../../views/MoviesPage/MoviesPage'));
+const MovieDetailsPage = lazy(() => import('../../views/MoviesDetailsPage/MovieDetailsPage'));
 
 function App() {
   return (

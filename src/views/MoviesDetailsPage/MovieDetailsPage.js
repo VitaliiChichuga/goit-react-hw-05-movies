@@ -9,8 +9,8 @@ import {
 import { useState, useEffect, Suspense, lazy } from 'react';
 import PropTypes from 'prop-types';
 import fetchMovies from '../../components/Services/ApiService';
-import style from '../views/MovieDetailsPage.module.css';
-import defaultImage from '../image/image.png';
+import style from '../MoviesDetailsPage/MovieDetailsPage.module.css';
+import defaultImage from '../../components/image/image.png';
 
 const Cast = lazy(() => import('../../components/Cast/Cast'));
 const Reviews = lazy(() => import('../../components/Reviews/Reviews'));

@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import PageHeading from '../PageHeading/PageHeading';
-import fetchMovies from '../../Services/ApiService';
-import styles from '../views/HomePage.module.css';
-import defaultImage from '../image/image.png';
+import PageHeading from '../../components/PageHeading/PageHeading';
+import fetchMovies from '../../components/Services/ApiService';
+import styles from '../HomePage/HomePage.module.css';
+import defaultImage from '../../components/image/image.png';
 
 function HomePage() {
   const location = useLocation();

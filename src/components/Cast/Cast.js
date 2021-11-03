@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import fetchMovies from '../Services/ApiService';
-import style from '../views/Cast.module.css';
+import style from '../Cast/Cast.module.css';
 import defaultImage from '../image/image.png';
 
 function Cast({ movieId }) {

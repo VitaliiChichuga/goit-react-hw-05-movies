@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react';
 import { NavLink, useLocation, useHistory } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import fetchMovies from '../../components/Services/ApiService';
-import styles from '../views/MoviesPage.module.css';
-import defaultImage from '../image/image.png';
+import styles from '../MoviesPage/MoviesPage.module.css';
+import defaultImage from '../../components/image/image.png';
 
 function MoviesPage() {
   const location = useLocation();
